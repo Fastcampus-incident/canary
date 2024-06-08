@@ -3,10 +3,10 @@
 applicationName: "fasttest"
 # Container image
 image:
-  repository: 684231376422.dkr.ecr.ap-northeast-2.amazonaws.com/nessa-test
+  repository: <업데이트 필요>.dkr.ecr.ap-northeast-2.amazonaws.com/test
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.ss
-  tag: "v2"
+  tag: "v1"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -61,7 +61,7 @@ service:
 
 
 # Ingress
-ingressLbName: test
+ingressLbName: test-lb
 ingressGroupName: test
 listenPorts: "'[{\"HTTP\": 8080}]'"
 albHealthCheck: /
@@ -79,7 +79,7 @@ ingressRule:
               port:
                 number: 8080
 ingressName: fasttest
-albSubnet: subnet-04b5223096ec8ac2f, subnet-0aa931b789aaa2b5e
+albSubnet: <업데이트 필요>
 
 nodeSelector: {}
 
